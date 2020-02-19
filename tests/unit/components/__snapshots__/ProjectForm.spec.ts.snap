@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectForm.vue Project form should be rendered correctly 1`] = `
+<v-form-stub
+  lazyvalidation="true"
+  value="true"
+>
+  <v-text-field-stub
+    autofocus="true"
+    backgroundcolor=""
+    clearable="true"
+    clearicon="$clear"
+    counter="50"
+    errorcount="1"
+    errormessages=""
+    hint="Project Title"
+    id="title"
+    label="Title"
+    loaderheight="2"
+    messages=""
+    prependinnericon="title"
+    required=""
+    rules="v => !!v || \\"Name is required\\",v => v && v.trim().length >= 10 || \\"Name must have at least 10 characters\\",v => v && v.trim().length <= 50 || \\"Name must be less than 50 characters\\""
+    successmessages=""
+    type="text"
+    value=""
+  />
+   
+  <v-textarea-stub
+    backgroundcolor=""
+    clearable="true"
+    clearicon="$clear"
+    counter="200"
+    errorcount="1"
+    errormessages=""
+    hint="Some description text"
+    id="description"
+    label="Description"
+    loaderheight="2"
+    messages=""
+    prependinnericon="comment"
+    rowheight="24"
+    rows="5"
+    rules="v => !!v || \\"Description is required\\",v => v && v.trim().length >= 10 || \\"Description must have at least 10 characters\\",v => v && v.trim().length <= 200 || \\"Description must have at most 200 characters\\""
+    successmessages=""
+    type="text"
+  />
+   
+  <v-text-field-stub
+    backgroundcolor=""
+    clearicon="$clear"
+    errorcount="1"
+    errormessages=""
+    hint="Number of people participating in the project"
+    id="people"
+    label="Number of Prople"
+    loaderheight="2"
+    messages=""
+    min="1"
+    prependinnericon="people"
+    required=""
+    rules="v => !isNaN(Number(v)) || \\"Number of prople must be a number\\",v => v >= 1 || \\"Number of people must be at least 1\\",v => v <= 5 || \\"Number of people must be at most 5\\""
+    step="1.0"
+    success="true"
+    successmessages=""
+    suffix="person"
+    type="number"
+    value="1"
+  />
+   
+  <v-btn-stub
+    activeclass=""
+    class="mr-4"
+    color="purple darken-1 white--text"
+    tag="button"
+    type="button"
+  >
+    ADD PROJECT
+  </v-btn-stub>
+</v-form-stub>
+`;

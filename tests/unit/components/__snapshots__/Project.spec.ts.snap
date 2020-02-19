@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project.vue renders project item correctly 1`] = `
+<v-card-stub
+  draggable=""
+  loaderheight="4"
+  tag="div"
+>
+  <v-card-title-stub>
+    Test Title
+  </v-card-title-stub>
+   
+  <v-card-subtitle-stub>
+    <v-icon-stub>
+      people
+    </v-icon-stub>
+    
+    1
+  
+  </v-card-subtitle-stub>
+   
+  <v-card-text-stub>
+    <p>
+      Test Description
+    </p>
+  </v-card-text-stub>
+</v-card-stub>
+`;

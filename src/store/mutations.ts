@@ -1,18 +1,20 @@
-import { Project, ProjectStatus } from '@/models/project';
-import { StateModel } from './state';
+import { Project } from "@/models/project";
+import { StateModel } from "@/store/models/state";
+import { ChangeProjectStatusPayload } from "@/store/models/mutations";
 
 export default {
   addProject: (state: StateModel, project: Project) =>
     state.projects.push(project),
   changeProjectStatus: (
     state: StateModel,
-    projectId: string,
-    newStatus: ProjectStatus
+    payload: ChangeProjectStatusPayload
   ) => {
-    const project = state.projects.find(project => project.id === projectId);
+    const project = state.projects.find(
+      project => project.id === payload.projectId
+    );
 
     if (project) {
-      project.status = newStatus;
+      project.status = payload.newStatus;
     }
   }
 };

@@ -1,10 +1,10 @@
-import { ProjectStatus } from '@/models/project';
-import { StateModel } from './state';
+import { ProjectStatus } from "@/models/project";
+import { StateModel } from "@/store/models/state";
 
 export default {
-  getProjects: (state: StateModel) => state.projects,
-  getActiveProjects: (state: StateModel) =>
+  projects: (state: StateModel) => state.projects,
+  activeProjects: (state: StateModel) =>
     state.projects.filter(project => project.status === ProjectStatus.ACTIVE),
-  getFinishedProjects: (state: StateModel) =>
+  finishedProjects: (state: StateModel) =>
     state.projects.filter(project => project.status === ProjectStatus.FINISHED)
 };

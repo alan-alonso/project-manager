@@ -1,8 +1,4 @@
-import { Project } from '@/models/project';
-
-export interface StateModel {
-  projects: Project[];
-}
+import { StateModel } from "@/store/models/state";
 
 const state: StateModel = {
   projects: []
