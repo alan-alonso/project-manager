@@ -1,4 +1,8 @@
-# project_manager
+[![versionvuejs](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/alan-alonso/project-manager/master/package.json&query=$.dependencies.vue&label=vue&logo=vue.js)](https://vuejs.org/)
+# Project Manager
+Simple project management application using VueJS with Typescript.
+
+Based on [Academind's](https://github.com/academind) Project Manager Typescript App.
 
 ## Project setup
 ```
@@ -15,7 +19,7 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
+### Run unit tests
 ```
 npm run test:unit
 ```
@@ -25,5 +29,3 @@ npm run test:unit
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
