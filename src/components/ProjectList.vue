@@ -62,6 +62,7 @@ export default class ProjectList extends Vue {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   onDragOver() {}
 
+  /** Change a project status when one is dropped over the list. */
   onDrop(event: DragEvent) {
     if (event.dataTransfer && event.dataTransfer.types[0] === "text/plain") {
       const projectId = event.dataTransfer.getData("text/plain");

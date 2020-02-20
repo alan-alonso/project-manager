@@ -22,6 +22,7 @@ export default class ProjectCmp extends Vue {
   @Prop({ required: true })
   project!: Project;
 
+  /** Attach the projects ID to the data when the project card is dragged. */
   onDragStart(event: DragEventInit) {
     if (event.dataTransfer) {
       event.dataTransfer.setData("text/plain", this.project.id);
