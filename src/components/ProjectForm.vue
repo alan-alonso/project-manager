@@ -46,7 +46,8 @@
       color="purple darken-1 white--text"
       class="mr-4"
       :disabled="!valid"
-    >ADD PROJECT</v-btn>
+      >ADD PROJECT</v-btn
+    >
   </v-form>
 </template>
 
